@@ -2,6 +2,9 @@
 Ye karke dikhaooo
 
 oops
+    - polymorphism
+    - data abstraction
+    - inherritance
 tuples
 dictionary
 numpy Pandas
