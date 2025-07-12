@@ -1,0 +1,57 @@
+
+
+Python Basics – Assignment Questions (1–25)
+	1.	Write a Python program to find the largest of three numbers.
+	2.	Create a program that checks whether a number is even or odd.
+	3.	Accept a string from the user and reverse it.
+	4.	Write a program to count the number of vowels in a string.
+	5.	Create a calculator using if-else (add, subtract, multiply, divide).
+	6.	Write a program to check if a number is prime.
+	7.	Display the multiplication table of a given number.
+	8.	Write a program to print the Fibonacci series up to n terms.
+	9.	Write a program to find the factorial of a number using a loop.
+	10.	Accept a number and check whether it is a palindrome.
+	11.	Find the sum of digits of a number using a while loop.
+	12.	Create a program to convert Celsius to Fahrenheit.
+	13.	Write a Python function to find the maximum of two numbers.
+	14.	Accept a list of numbers and return the average.
+	15.	Find the second largest number in a list.
+	16.	Accept a sentence and count the number of words.
+	17.	Accept a list and remove all duplicates from it.
+	18.	Write a program to create a dictionary from two lists.
+	19.	Accept a list and sort it without using sort() function.
+	20.	Write a function that checks if a string is a pangram.
+	21.	Write a function to check if the input is a number or not.
+	22.	Accept a string and check if it is an anagram of another.
+	23.	Accept a number and print its binary, octal, and hexadecimal.
+	24.	Accept a list and print all elements greater than 50.
+	25.	Write a function to count uppercase and lowercase letters in a string.
+
+⸻
+
+Python Advanced – Assignment Questions (26–50)
+	26.	Write a Python program using a lambda function to square all elements in a list.
+	27.	Create a function that returns a list of prime numbers from 1 to 100.
+	28.	Write a program to implement a simple calculator using functions.
+	29.	Implement a recursive function to compute factorial.
+	30.	Create a Python program using OOP for student management (class, object, init).
+	31.	Write a program to read a file and count the number of lines and words.
+	32.	Write a Python decorator to print the execution time of a function.
+	33.	Create a class BankAccount with deposit and withdraw methods.
+	34.	Implement a generator to yield even numbers from 1 to n.
+	35.	Write a function using *args and **kwargs to print any number of arguments.
+	36.	Use list comprehension to create a list of squares of even numbers from 1 to 20.
+	37.	Create a function that takes a list and returns only unique elements.
+	38.	Write a Python program to merge two dictionaries.
+	39.	Create a class that inherits from another class and overrides a method.
+	40.	Write a function to find common elements between two lists.
+	41.	Implement a program to demonstrate try-except-finally for exception handling.
+	42.	Write a program to parse and display JSON data from a string.
+	43.	Create a class that demonstrates the use of private and protected members.
+	44.	Write a Python function to check if a string is a valid email address.
+	45.	Accept a CSV file and convert it into a list of dictionaries.
+	46.	Create a simple login system using dictionary and input.
+	47.	Write a function to flatten a nested list using recursion.
+	48.	Demonstrate use of map(), filter(), and reduce() on a list.
+	49.	Build a small CLI app that takes user input and performs basic operations.
+	50.	Create a mini Python quiz that takes answers from the user and displays score.

@@ -1,0 +1,164 @@
+
+
+ IBM Data Science Certification – Objective Questions
+
+⸻
+
+Python (15 Questions)
+	1.	What is the output of type("5")?
+A) int B) float C) str D) bool
+ Ans: C
+	2.	What is the purpose of # in Python?
+A) Loop B) Comment C) Function D) Class
+Ans: B
+	3.	Which function is used to read input from the user?
+A) input() B) print() C) read() D) scan()
+Ans: A
+	4.	What is the output of 2**3?
+A) 6 B) 8 C) 9 D) 5
+ Ans: B
+	5.	Which of these is a mutable data type?
+A) tuple B) list C) str D) int
+Ans: B
+	6.	What does len() function return?
+A) Minimum value B) Maximum value
+C) Number of elements D) Index
+Ans: C
+	7.	What is the result of bool(0)?
+A) True B) False C) 0 D) None
+Ans: B
+	8.	Which loop runs at least once?
+A) while B) for C) do-while D) Python has no do-while
+Ans: D
+	9.	How do you declare a dictionary?
+A) [] B) {} C) () D) <>
+Ans: B
+	10.	What is the output of 'IBM'[::-1]?
+A) IBM B) MBI C) BMI D) Error
+Ans: B
+	11.	Which of these is used to handle exceptions?
+A) for-else B) if-else C) try-except D) with-open
+Ans: C
+	12.	What is a lambda function?
+A) Named function B) Recursive function
+C) Anonymous function D) Built-in function
+Ans: C
+	13.	What is the output of list(range(1,4))?
+A) [1, 2, 3, 4] B) [1, 2, 3] C) [1, 3] D) [1, 4]
+Ans: B
+	14.	Which file extension is correct for Python scripts?
+A) .txt B) .py C) .pyt D) .exe
+Ans: B
+	15.	What does break do in a loop?
+A) Pauses the loop B) Repeats loop
+C) Stops loop D) Skips iteration
+Ans: C
+
+⸻
+
+MySQL (15 Questions)
+	1.	Which statement retrieves data from a table?
+A) GET B) SELECT C) FETCH D) READ
+Ans: B
+	2.	What does the WHERE clause do?
+A) Joins tables B) Filters records C) Groups rows D) None
+Ans: B
+	3.	Which clause groups records by column values?
+A) ORDER BY B) GROUP BY C) DISTINCT D) JOIN
+Ans: B
+	4.	Which function returns the number of rows?
+A) COUNT() B) SUM() C) LENGTH() D) AVG()
+Ans: A
+	5.	What will this return: SELECT * FROM table LIMIT 2;?
+A) First 2 records B) Last 2 C) Top 2 columns D) Error
+Ans: A
+	6.	Which statement deletes records?
+A) REMOVE B) ERASE C) DELETE D) TRUNCATE
+Ans: C
+	7.	Which keyword avoids duplicate records in output?
+A) UNIQUE B) FILTER C) ONLY D) DISTINCT
+Ans: D
+	8.	What is the default sorting order in ORDER BY?
+A) DESC B) ASC C) RANDOM D) None
+Ans: B
+	9.	Which SQL function returns maximum value?
+A) MAX() B) TOP() C) GREATEST() D) HIGH()
+Ans: A
+	10.	What does NULL mean?
+A) 0 B) Empty string C) Unknown value D) False
+Ans: C
+	11.	What is a primary key used for?
+A) Style formatting B) Uniqueness C) Sorting D) Indexing only
+Ans: B
+	12.	Which clause filters aggregated results?
+A) WHERE B) LIMIT C) HAVING D) BETWEEN
+Ans: C
+	13.	Which operator checks pattern match?
+A) IN B) LIKE C) = D) BETWEEN
+Ans: B
+	14.	What does a foreign key do?
+A) Enforce referential integrity
+B) Make values unique
+C) Create indexes
+D) Create temporary tables
+Ans: A
+	15.	Which join gives only matching records from both tables?
+A) LEFT JOIN B) RIGHT JOIN C) OUTER JOIN D) INNER JOIN
+Ans: D
+
+⸻
+
+Power BI (15 Questions)
+	1.	Power BI is developed by:
+A) Google B) IBM C) Microsoft D) Oracle
+Ans: C
+	2.	What does Power Query help with?
+A) Writing reports B) Data transformation
+C) Exporting charts D) Filtering visuals
+Ans: B
+	3.	What is .pbix?
+A) Excel file B) PowerPoint file
+C) Power BI file D) BI Image file
+Ans: C
+	4.	Which visual is best to compare categories?
+A) Line chart B) Bar chart C) Card D) Slicer
+Ans: B
+	5.	What is DAX used for?
+A) SQL scripting B) Styling visuals
+C) Calculated fields D) Creating slides
+Ans: C
+	6.	Which visual shows trends over time?
+A) Pie B) Column C) Line chart D) Donut
+Ans: C
+	7.	What is a slicer used for?
+A) Show data total B) Filter visuals
+C) Rename columns D) Display KPIs
+Ans: B
+	8.	What is the use of “Model” view?
+A) Build reports B) Set themes
+C) Create relationships D) Import files
+Ans: C
+	9.	Power BI Desktop works best with which format?
+A) PDF B) DOCX C) XLSX D) PPT
+Ans: C
+	10.	Which icon represents refresh data?
+A) Arrow loop B) Trash bin C) Star D) Wrench
+Ans: A
+	11.	Which is NOT a data type in Power BI?
+A) Date B) Decimal C) True/False D) Image
+Ans: D
+	12.	Which of these is a calculated column?
+A) Input column B) Import column
+C) DAX created D) Duplicate
+Ans: C
+	13.	What happens when you publish a report?
+A) Deletes report B) Downloads file
+C) Sends it to Power BI Service D) Converts to Excel
+Ans: C
+	14.	What is the function of the FILTER pane?
+A) Add new visuals B) Create relationships
+C) Add page-level filters D) Reset visuals
+Ans: C
+	15.	Can you import Python scripts in Power BI?
+A) No B) Yes C) Only on Pro D) Only in web version
+Ans: B

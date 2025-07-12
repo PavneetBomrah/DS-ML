@@ -1,0 +1,261 @@
+
+
+ PYTHON CONCEPTS + IBM EXAM QUESTIONS
+
+⸻
+
+1. Variables and Data Types
+
+Concept:
+Variables are used to store data. Python has dynamic typing.
+Common data types: int, float, str, bool, list, tuple, dict, set.
+
+x = 10        # int
+pi = 3.14     # float
+name = "IBM"  # str
+
+IBM Questions:
+	•	Q1. What is the output of type(3.14)?
+→ <class 'float'>
+	•	Q2. What data type is returned by input()?
+
+⸻
+
+2. Operators
+
+Concept:
+Python supports arithmetic (+, -, *, /), relational (==, !=, >, etc.), logical (and, or, not) and assignment operators.
+
+a = 5
+b = 2
+print(a // b)  # Output: 2 (floor division)
+
+IBM Questions:
+	•	Q1. What is the output of 5 % 2?
+→ 1
+	•	Q2. Is and an arithmetic operator?
+→ No, it’s logical.
+
+⸻
+
+3. Strings
+
+Concept:
+Strings are sequences of characters. Strings are immutable.
+
+s = "IBM"
+print(s.upper())  # Output: 'IBM'
+print(s[0])       # Output: 'I'
+
+IBM Questions:
+	•	Q1. What will s[::-1] do?
+→ Reverses the string.
+	•	Q2. How to find the length of a string?
+→ len(s)
+
+⸻
+
+4. Lists and Tuples
+
+Concept:
+	•	list is mutable, []
+	•	tuple is immutable, ()
+
+lst = [1, 2, 3]
+lst.append(4)
+
+tup = (1, 2, 3)
+
+IBM Questions:
+	•	Q1. What’s the difference between list and tuple?
+	•	Q2. How to access last element in a list?
+→ lst[-1]
+
+⸻
+
+5. Dictionaries
+
+Concept:
+Key-value pairs. Unordered.
+
+d = {"name": "IBM", "course": "DS"}
+print(d["name"])  # Output: IBM
+
+IBM Questions:
+	•	Q1. How to get all keys from a dictionary?
+→ d.keys()
+	•	Q2. Can dict have duplicate keys?
+→ No
+
+⸻
+
+6. Conditional Statements
+
+Concept:
+if, elif, else
+
+age = 18
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+IBM Questions:
+	•	Q1. What is the output if x = 5 and if x > 10:?
+	•	Q2. Which keyword is used to check multiple conditions?
+
+⸻
+
+7. Loops (for, while)
+
+Concept:
+
+for i in range(3):
+    print(i)
+
+count = 0
+while count < 3:
+    print(count)
+    count += 1
+
+IBM Questions:
+	•	Q1. What does range(1,5) return?
+→ [1, 2, 3, 4]
+	•	Q2. What loop is best for reading items in a list?
+
+⸻
+
+8. Functions
+
+Concept:
+
+def greet(name):
+    return "Hello " + name
+
+print(greet("IBM"))
+
+def greet(name):
+    return "Hello " + name
+
+print(greet("IBM"))
+
+IBM Questions:
+	•	Q1. What is the default return type of a function without return?
+→ None
+	•	Q2. What is the use of def?
+
+⸻
+
+9. Lambda Functions
+
+Concept:
+
+square = lambda x: x**2
+print(square(4))  # 16
+
+IBM Questions:
+	•	Q1. What’s the syntax for lambda?
+	•	Q2. Can lambda have multiple expressions?
+→ No
+
+⸻
+
+10. List Comprehension 
+
+squares = [x*x for x in range(5)]
+
+IBM Questions:
+	•	Q1. Convert for loop into list comprehension.
+	•	Q2. Which is faster – list comp or loop?
+
+⸻
+
+11. Exception Handling
+
+try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("Error")
+finally:
+    print("Done")
+
+IBM Questions:
+	•	Q1. What is the output of above?
+	•	Q2. What is the use of finally block?
+
+⸻
+
+12. File Handling
+
+f = open("test.txt", "r")
+print(f.read())
+f.close()
+
+IBM Questions:
+	•	Q1. How to read all lines?
+→ readlines()
+	•	Q2. What mode opens file for writing?
+→ "w"
+
+⸻
+
+13. OOP (Classes and Objects)
+
+class Car:
+    def __init__(self, name):
+        self.name = name
+
+c = Car("BMW")
+print(c.name)
+
+IBM Questions:
+	•	Q1. What is __init__?
+	•	Q2. How do you define a class?
+
+⸻
+
+14. Modules and Packages
+
+import math
+print(math.sqrt(16))  # Output: 4.0
+
+IBM Questions:
+	•	Q1. What is a module?
+	•	Q2. What does import do?
+
+⸻
+
+15. Working with NumPy (IBM Core)
+
+import numpy as np
+a = np.array([1, 2, 3])
+print(a.mean())
+
+IBM Questions:
+	•	Q1. How to create a 2D array?
+	•	Q2. What function gives mean of array?
+
+⸻
+
+16. Working with Pandas (IBM Core)
+
+import pandas as pd
+df = pd.read_csv("file.csv")
+print(df.head())
+
+IBM Questions:
+	•	Q1. How to check missing data?
+	•	Q2. Difference between loc[] and iloc[]?
+
+⸻
+
+17. Matplotlib Basics
+
+import matplotlib.pyplot as plt
+plt.plot([1, 2, 3], [4, 5, 6])
+plt.show()
+
+IBM Questions:
+	•	Q1. Which function displays the graph?
+	•	Q2. How to add x and y labels?
+

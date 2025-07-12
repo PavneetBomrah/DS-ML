@@ -1,0 +1,161 @@
+
+
+
+
+Statistics & Analytics – BCA Notes
+
+⸻
+
+1. Introduction to Statistics
+
+Definition:
+Statistics is the science of collecting, organizing, analyzing, and interpreting data to make decisions.
+
+Example:
+A teacher calculates the average marks of students to understand class performance.
+
+2. Sample vs. Population
+Term	Meaning
+Population	Entire group being studied (e.g., all students in a college)
+Sample	A smaller group selected from the population (e.g., 50 students)
+
+Example:
+Surveying 100 people to understand the opinion of a city.
+
+⸻
+
+3. Measures of Central Tendency
+
+These are values that represent the center of a data set.
+
+a. Arithmetic Mean (Average)
+
+Formula:
+Mean = (Sum of all values) / (Number of values)
+
+Example:
+Marks = [50, 60, 70] → Mean = (50+60+70)/3 = 60
+
+⸻
+
+b. Harmonic Mean
+
+Used when working with rates (speed, efficiency, etc.)
+
+Formula:
+H.M. = n / (1/x₁ + 1/x₂ + … + 1/xₙ)
+
+Example:
+Speeds = [60, 80] → H.M. ≈ 68.57 km/h
+
+⸻
+
+c. Geometric Mean
+
+Used for growth rates (interest, population, etc.)
+
+Formula:
+G.M. = (x₁ × x₂ × … × xₙ)^(1/n)
+
+Example:
+Growth = [2, 8] → G.M. = √(2×8) = 4
+
+⸻
+
+d. Mode
+
+Definition: Most frequently occurring value.
+
+Example:
+Marks = [70, 80, 80, 90] → Mode = 80
+
+⸻
+
+e. Quartiles
+
+Definition: Divide the data into 4 equal parts.
+
+Quartile	Meaning
+Q1	25% of data (lower quartile)
+Q2	50% of data (median)
+Q3	75% of data (upper quartile)
+
+Example:
+Data = [10, 20, 30, 40, 50] → Q1 = 20, Q2 = 30, Q3 = 40
+
+⸻
+
+4. Variance & Standard Deviation
+
+a. Variance
+
+Tells how spread out the data is from the mean.
+
+Formula:
+Variance = Σ(x - mean)² / n
+
+⸻
+
+b. Standard Deviation
+
+Square root of variance.
+Low SD means values are close to mean.
+
+Example:
+Data = [2, 4, 4, 4, 5, 5, 7, 9] → Mean = 5, SD ≈ 2
+
+⸻
+
+5. Outliers
+
+Definition:
+Values that are far from other values.
+
+Example:
+Marks = [45, 46, 50, 95] → 95 is an outlier.
+
+⸻
+
+Data Distributions
+
+⸻
+
+6. Normal Distribution (Bell Curve)
+
+Shape: Symmetrical, bell-shaped curve
+Example: Student heights in a classroom.
+
+⸻
+
+7. Uniform Distribution
+
+Definition: All outcomes have equal probability.
+Example: Rolling a fair die → [1, 2, 3, 4, 5, 6]
+
+⸻
+
+8. Exponential Distribution
+
+Definition: Measures time between events.
+Example: Time until next customer arrives at a shop.
+
+9. Right & Left Skewed Distributions
+
+Type	Tail Direction	Example
+Right Skewed	Tail on right	Income distribution
+Left Skewed	Tail on left	Retirement age data
+
+10. Random Distribution
+
+Definition: No clear pattern or trend in data.
+Example: Lottery number outcomes.
+
+⸻
+
+11. Central Limit Theorem (CLT)
+
+Definition:
+Even if population is not normal, the mean of many samples (n > 30) will be approximately normally distributed.
+
+Importance:
+Helps in predicting overall population behavior using samples.

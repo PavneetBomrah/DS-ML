@@ -1,0 +1,57 @@
+
+
+MySQL Basics – Assignment Questions (1–25)
+	1.	Create a database named college_db.
+	2.	Create a table students with fields: id, name, age, department.
+	3.	Insert 5 records into the students table.
+	4.	Write a query to fetch all records from students.
+	5.	Fetch students whose age is greater than 20.
+	6.	Update the department of a student where name is ‘John’.
+	7.	Delete a student whose ID is 3.
+	8.	Select students ordered by age in descending order.
+	9.	Fetch only distinct departments from the students table.
+	10.	Count the number of students in the table.
+	11.	Rename the students table to student_info.
+	12.	Add a new column email to the student_info table.
+	13.	Write a query to find students whose name starts with ‘A’.
+	14.	Display students whose age is between 18 and 25.
+	15.	Write a query to find the student with the highest age.
+	16.	Use LIMIT to display the first 3 students.
+	17.	Create a table courses with fields: course_id, course_name, credits.
+	18.	Insert 3 records into the courses table.
+	19.	Select all students whose department is ‘Computer Science’.
+	20.	Use IN to fetch students from specific departments.
+	21.	Use BETWEEN to find students aged between 20 and 30.
+	22.	Write a query to display current system date and time.
+	23.	Use AS to rename a column in the SELECT query.
+	24.	Write a query to fetch all data except students of a particular department.
+	25.	Delete all records from the students table without dropping the table.
+
+⸻
+
+MySQL Advanced – Assignment Questions (26–50)
+	26.	Create a marks table with fields: student_id, subject, marks.
+	27.	Insert at least 5 records into the marks table.
+	28.	Use JOIN to combine students and marks data.
+	29.	Write a query to calculate average marks per student.
+	30.	Use GROUP BY to find total marks obtained by each student.
+	31.	Use HAVING to find students who scored more than 200 in total.
+	32.	Write a query to fetch students with the same age using GROUP BY and COUNT().
+	33.	Use INNER JOIN, LEFT JOIN, RIGHT JOIN and explain the difference.
+	34.	Create a new table with a PRIMARY KEY and AUTO_INCREMENT.
+	35.	Create a table with a FOREIGN KEY referencing another table.
+	36.	Write a subquery to find the maximum marks in the marks table.
+	37.	Create a view to display student names and their total marks.
+	38.	Use a subquery to list students who scored more than the average mark.
+	39.	Create a stored procedure to insert new student data.
+	40.	Create a stored procedure to update student department.
+	41.	Create a user-defined function to calculate grade from marks.
+	42.	Create a trigger that logs insert operations on students.
+	43.	Use a transaction to update multiple records atomically.
+	44.	Write a query to find duplicate records using GROUP BY and HAVING.
+	45.	Create a backup of a database using mysqldump.
+	46.	Restore a MySQL database from a backup file.
+	47.	Import data from a CSV file into a MySQL table.
+	48.	Create an index on student name for faster search.
+	49.	Write a query to find the second highest mark in a subject.
+	50.	Drop the courses table and explain the effect.

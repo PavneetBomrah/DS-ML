@@ -1,0 +1,54 @@
+
+
+Project 1: Sales Dashboard for a Retail Store
+
+🔸 Objective:
+
+Visualize sales performance across regions, products, and time using an Excel or CSV dataset.
+
+🔹 Dataset Structure:
+
+Order_ID	Product	Category	Quantity	Price	Order_Date	Region
+
+You can download similar data from here:
+🔗 Sample Sales Data – Kaggle
+
+🔹 Features to Include:
+	•	💳 Card: Total Sales, Total Orders
+	•	📊 Bar Chart: Top 5 Products by Sales
+	•	🗺️ Map: Sales by Region
+	•	🧭 Line Chart: Monthly Sales Trend
+	•	📂 Pie Chart: Sales by Category
+	•	📌 Slicers: Region, Category
+
+🔹 Outcome:
+
+An interactive, user-friendly dashboard showing what products are selling best and where.
+
+⸻
+
+Project 2: Student Performance Dashboard
+
+🔸 Objective:
+
+Analyze student marks across subjects to help understand performance trends.
+
+🔹 Sample Dataset:
+
+Student_ID	Name	Subject	Marks	Class	Gender	Exam_Date
+101	Alice	Math	88	10	F	2024-10-01
+102	Raj	English	75	10	M	2024-10-01
+103	Priya	Science	91	10	F	2024-10-01
+
+Create your own in Excel or use sample educational datasets.
+
+🔹 Features to Include:
+	•	💳 Card: Average Marks, Total Students
+	•	📊 Bar Chart: Marks per Subject
+	•	👥 Pie Chart: Gender Distribution
+	•	📈 Line Chart: Marks Trend Over Time
+	•	🎯 Filters: Subject, Gender, Class
+
+Outcome:
+
+A dynamic dashboard to understand student performance and identify trends or gaps.
