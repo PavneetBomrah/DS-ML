@@ -1,55 +1,73 @@
-import os
+# 1. Import Libraries
+import numpy as np
 import pandas as pd
-import zipfile
-import seaborn as sns
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
 
-# Step 1: Setup Kaggle API (Fill your credentials)
-os.environ['KAGGLE_USERNAME'] = "pavneetbomrah"
-os.environ['KAGGLE_KEY'] = "1eeb684317cd5c6b03f235b4bff27dbf"
+# Load dataset
+df = pd.read_csv("https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv")
 
-# Step 2: Download Dataset
-# ~kaggle datasets download -d spscientist/students-performance-in-exams
+# Select relevant features
+features = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
+df = df[features+['Survived']].dropna()
 
-# Step 3: Unzip
-with zipfile.ZipFile("students-performance-in-exams.zip", 'r') as zip_ref:
-    zip_ref.extractall("data")
-
-# Step 4: Load Dataset
-df = pd.read_csv("data/StudentsPerformance.csv")
-print("Data Loaded Successfully!\n", df.head())
-
-# Step 5: Feature Engineering
-df['average_score'] = (df['math score'] + df['reading score'] + df['writing score']) / 3
-df['pass/fail'] = df['average_score'].apply(lambda x: 1 if x >= 50 else 0)
-df = df.drop(['average_score'], axis=1)
-
-# Encode categorical variables
-print(df.head())
-df = pd.get_dummies(df, drop_first=True)
 print(df.head())
 
-# Step 6: Prepare features and target
-X = df.drop('pass/fail', axis=1)
-y = df['pass/fail']
+# Define numerical and categorical features
+num_features = ['Age', 'SibSp', 'Parch', 'Fare']
+cat_features = ['Pclass', 'Sex', 'Embarked']
 
-# Step 7: Train/Test Split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Define transformers
+num_transformer = StandardScaler()  # Standardization for numerical features
+cat_transformer = OneHotEncoder(handle_unknown='ignore')  # One-hot encoding for categorical features
 
-# Step 8: Train Model
-model = DecisionTreeClassifier()
-model.fit(X_train, y_train)
+# Combine transformers into a preprocessor
+preprocessor = ColumnTransformer([
+    ('num', num_transformer, num_features),
+    ('cat', cat_transformer, cat_features)
+])
 
-# Step 9: Predict and Evaluate
-y_pred = model.predict(X_test)
-print("\nAccuracy:", accuracy_score(y_test, y_pred))
-print("Classification Report:\n", classification_report(y_test, y_pred))
+# Define target and features
+X = df[features]
+y = df['Survived']
 
-# Step 10: Optional Visualization
-plt.figure(figsize=(8,6))
-sns.heatmap(df.corr(), annot=True, cmap="coolwarm")
-plt.title("Feature Correlation Heatmap")
-plt.show()
+# Split into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X,y , test_size=0.2, random_state=42)
+
+# Display the shape of the data
+print(f"Training set shape: {X_train.shape}")
+print(f"Testing set shape: {X_test.shape}")
+
+# Define the pipeline
+pipeline = Pipeline([
+    ('preprocessor', preprocessor),  # Data transformation
+    ('classifier', RandomForestClassifier(n_estimators=100, random_state=42))  # ML model
+])
+
+# Train the model
+pipeline.fit(X_train, y_train)
+print("Model training complete!")
+
+# Make predictions
+y_pred = pipeline.predict(X_test)
+
+# Compute accuracy
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Model Accuracy: {accuracy:.2f}")
+
+import joblib
+
+# Save the trained pipeline
+joblib.dump(pipeline, 'ml_pipeline.pkl')
+
+# Load the model
+loaded_pipeline = joblib.load('ml_pipeline.pkl')
+
+# Predict using the loaded model
+sample_data = pd.DataFrame([{'Pclass': 3, 'Sex': 'male', 'Age': 25, 'SibSp': 0, 'Parch': 0, 'Fare': 7.5, 'Embarked': 'S'}])
+prediction = loaded_pipeline.predict(sample_data)
+print(f"Prediction: {'Survived' if prediction[0] == 1 else 'Did not Survive'}")

@@ -1,0 +1,39 @@
+     gender race/ethnicity  ... writing score    Average
+0    female        group B  ...            74  72.666667
+1    female        group C  ...            88  82.333333
+2    female        group B  ...            93  92.666667
+3      male        group A  ...            44  49.333333
+4      male        group C  ...            75  76.333333
+..      ...            ...  ...           ...        ...
+995  female        group E  ...            95  94.000000
+996    male        group C  ...            55  57.333333
+997  female        group C  ...            65  65.000000
+998  female        group D  ...            77  74.333333
+999  female        group D  ...            86  83.000000
+
+[1000 rows x 9 columns]
+     math score  reading score  ...  lunch_standard  test preparation course_none
+0            72             72  ...            True                          True
+1            69             90  ...            True                         False
+2            90             95  ...            True                          True
+3            47             57  ...           False                          True
+4            76             78  ...            True                          True
+..          ...            ...  ...             ...                           ...
+995          88             99  ...            True                         False
+996          62             55  ...           False                          True
+997          59             71  ...           False                         False
+998          68             78  ...            True                         False
+999          77             86  ...           False                          True
+
+[1000 rows x 16 columns]
+Model Accuracy : 1.0
+Classification Report :
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        29
+           1       1.00      1.00      1.00       171
+
+    accuracy                           1.00       200
+   macro avg       1.00      1.00      1.00       200
+weighted avg       1.00      1.00      1.00       200
+
